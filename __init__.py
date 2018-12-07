@@ -38,8 +38,11 @@ class directionsSkill(MycroftSkill):
     def handle_directions__intent(self, message):
         self.apikey = self.settings.get('apiKey', '')
         self.myunit = self.settings.get('Unit','')
+        print(message.data.get("FromLocation", None)+"#####")
         fromaddr = message.data.get("FromLocation", None).replace(" to", "")
         toaddr = message.data.get("ToLocation", None)
+        print(fromaddr+"#####")
+        print(toaddr+"#####")
 
         try:
             headers = {'Accept': 'application/json; charset=utf-8'}
