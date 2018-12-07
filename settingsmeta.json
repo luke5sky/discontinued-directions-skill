@@ -1,0 +1,31 @@
+{
+    "name": "Directions Skill",
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Directions Settings",
+                "fields": [
+                    {
+                        "type": "label",
+                        "value": "",
+                        "label": "Go to https://openrouteservice.org/dev/#/signup and create an account. Get your API-Key/API-Token and put it in the field below. You may need to wait a bit, till mycroft synced your settings to the unit.<p/>"
+                    },
+                    {
+                        "name": "apiKey",
+                        "type": "Text",
+                        "label": "OpenRouteService-ApiKey",
+                        "value": "",
+                        "placeholder": "API KEY"
+                    },
+                    {
+                        "name": "Unit",
+                        "type": "Text",
+                        "label": "Distance-Unit (may be MI or KM)",
+                        "value": "KM",
+                        "placeholder": "MI or KM"
+                    }
+                ]
+            }
+        ]
+    }
+}
